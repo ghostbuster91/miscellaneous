@@ -3,10 +3,10 @@
 
 ## Build tools
 
-1. sbt - Official scala build tool. It is the most popular, very matured and has comperhensive documentation. 
+1. [sbt](https://www.scala-sbt.org/) - Official scala build tool. It is the most popular, very matured and has comperhensive documentation. 
   There is also a ton of stuff build on top of it (plugins, integrations etc.). Some people find it hard to grasp.
-3. mill - Build tool initially created by Li Haoyi. Strives to be simpler than sbt.
-4. furry - Build tool created by Jon Pretty. Build definition separated from source code. Imperative approach to edition and maintenance.
+3. [mill](https://github.com/com-lihaoyi/mill) - Build tool initially created by Li Haoyi. Strives to be simpler than sbt.
+4. [furry](https://github.com/propensive/fury) - Build tool created by Jon Pretty. Build definition separated from source code. Imperative approach to edition and maintenance.
 
 ## IDE
 
@@ -16,12 +16,13 @@
 
 ## Under the hood
 
-1. BSP - Builder server protocol made by JetBrains. Code editor needs to be aware of e.g. what the classpath is and so on in order to run tests or main application. This protocol allows to comunicate between code editor and a build tool, so the build tools' specific integrations don't have to be build into code editors and repeated. 
-2. LSP - Language server protocol made by Microsoft for Visual Studio code. Extract language/framework specific stuff out from the code editor to make it ligher and also to reuse language support acros all code editors which support LSP. This doesn't overlap with BSP - it is used for code navigation, syntax highlithing etc.
-3. zinc - scala incremental compiler. Many build tools which want to be fast need to implement integration layer for it.
-4. bloop - Bloop is a build server that runs in the backgroud of your machine and serves build requests for a specific workspace. It uses BSP to communicate with IDE and various build tools. It implements the integration layer for zinc, so the build tools don't have to. With this in your toolbelt the build tool is only responsible for parsing the build definition and fetching dependencies.
-5. semanticDB
-6. coursier - coursier is a dependency resolver / fetcher à la Maven / Ivy, entirely rewritten from scratch in Scala. It aims at being fast and easy to embed in other contexts. Its core embraces functional programming principles.
+1. [BSP](https://build-server-protocol.github.io/) - Builder server protocol made by JetBrains. Code editor needs to be aware of e.g. what the classpath is and so on in order to run tests or main application. This protocol allows to comunicate between code editor and a build tool, so the build tools' specific integrations don't have to be build into code editors and repeated. 
+2. [LSP](https://microsoft.github.io/language-server-protocol/) - Language server protocol made by Microsoft for Visual Studio code. Extract language/framework specific stuff out from the code editor to make it ligher and also to reuse language support acros all code editors which support LSP. This doesn't overlap with BSP - it is used for code navigation, syntax highlithing etc.
+3. [zinc](https://github.com/sbt/zinc) - scala incremental compiler. Many build tools which want to be fast need to implement integration layer for it.
+4. [bloop](https://scalacenter.github.io/bloop/) - Bloop is a build server that runs in the backgroud of your machine and serves build requests for a specific workspace. It uses BSP to communicate with IDE and various build tools. It implements the integration layer for zinc, so the build tools don't have to. With this in your toolbelt the build tool is only responsible for parsing the build definition and fetching dependencies.
+5. metals
+6. semanticDB
+7. coursier - coursier is a dependency resolver / fetcher à la Maven / Ivy, entirely rewritten from scratch in Scala. It aims at being fast and easy to embed in other contexts. Its core embraces functional programming principles.
 
 ## Linters & formatters
 1. scalafmt
