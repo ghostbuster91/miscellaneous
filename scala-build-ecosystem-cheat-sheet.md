@@ -37,7 +37,7 @@
 3. sbt-ci-release
 4. sbt-release
 5. sbt-git - calling git from sbt. Used by sbt-ci-release
-6. sbt-tpolecat - recommended set of compiler flags
+6. [sbt-tpolecat](https://github.com/DavidGregory084/sbt-tpolecat) - recommended set of compiler flags
 7. sbt-dynver
 8. sbt-pgp - calling pgp binary from sbt
 9. sbt-travis-ci
