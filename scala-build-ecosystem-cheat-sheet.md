@@ -5,7 +5,7 @@ Scala, because of its complexity, struggled for many years to provide great deve
 
 
 ## Purpose
-It helped my to structure my knowledge and identify gaps in it but I hope that others, especially newcomers, could use this cheet sheet as a guide in this, not so small, labyrinth of tools.
+It helped my to structure my knowledge and identify gaps in it, but I hope that others, especially newcomers, could use this cheat sheet as a guide in this, not so small, labyrinth of tools.
 
 ## Build tools
 
