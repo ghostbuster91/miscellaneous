@@ -14,9 +14,13 @@
 2. [LSP](https://microsoft.github.io/language-server-protocol/) - Language server protocol made by Microsoft for Visual Studio code. It extracts language/framework specific stuff out from the code editor to make it ligher and also to reuse language support acros all code editors which support LSP. This doesn't overlap with BSP - it is used for code navigation, syntax highlithing etc.
 3. [zinc](https://github.com/sbt/zinc) - scala incremental compiler. Many build tools which want to be fast need to implement integration layer for it.
 4. [bloop](https://scalacenter.github.io/bloop/) - Bloop is a build server that runs in the backgroud of your machine and serves build requests for a specific workspace. It uses BSP to communicate with IDE and various build tools. It implements the integration layer for zinc, so the build tools don't have to. With this in your toolbelt the build tool is only responsible for parsing the build definition and fetching dependencies.
-5. metals
-6. semanticDB
+5. [metals](https://scalameta.org/metals/) - Language server for scala. Uses LSP to communicate with IDE and BSP to communicate with build tools.
+6. [semanticDB] - In order to power up the huge set of tools with rich features you need to know more than just a code structure. SemanticDB is a place when compiler puts that information for the latter use of other tools.
 7. [coursier](https://github.com/coursier/coursier) - coursier is a dependency resolver. It can be used as a standalone tool or by the build tools to fetch dependencies. Recently, sbt started using it.
+
+## Others
+
+1. [scala-steward](https://github.com/scala-steward-org/scala-steward) - bot to automatically update your dependencies. Similar to github's dependabot but tailored for scala.
 
 ## Linters & formatters
 1. [scalafmt](https://scalameta.org/scalafmt/) - state of the art formatter for your scala code
@@ -40,6 +44,7 @@
 10. [sbt-pack](https://github.com/xerial/sbt-pack) - Create distributable scala packages togheter with the launch script. An alternative to sbt-assembly.
 11. [sbt-travis-ci](https://github.com/dwijnand/sbt-travisci) - sbt-travisci is an sbt plugin to integrate with Travis CI. ?? HOW?
 12. [sbt-github-actions](https://github.com/djspiewak/sbt-github-actions) - Can generate github workflow from sbt build.
+13. [sbt-updates](https://github.com/rtimush/sbt-updates) - Display your sbt project's dependency updates.
 
 ## github actions
 1. [coursier-cache-action](https://github.com/coursier/cache-action) - A GitHub action to save / restore the coursier / sbt / mill / Ammonite caches of your build.
