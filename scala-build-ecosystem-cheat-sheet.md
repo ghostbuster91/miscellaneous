@@ -1,7 +1,8 @@
 # Scala build ecosystem cheet sheet
 
 ## Introduction
-Scala, because of it complexity, struggled for many years to provide great developer expirience. Thankfully to the great work of many contributors around the world this times are gone forever. Standard ways of enriching IDE's with language specific things were not enough. That's why scala had to take the lead in driving the shape of the build systems further. Below is an incomplete list of tools somehow related to building scala projects which I personally think are quite significant. Obviosuly their descriptions are rather shallow, I only tried to capture the most essential aspect of given project - for more details please check out the linked documentation. 
+Scala, because of its complexity, struggled for many years to provide great developer experience. Thankfully to the great work of many contributors around the world these times are gone forever. Standard ways of enriching IDE's with language specific things were not enough. That's why scala had to take the lead in driving the shape of the build systems further. Below is an incomplete list of tools somehow related to building scala projects which I personally think are quite significant. Obviously their descriptions are rather shallow, I only tried to capture the most essential aspect of a given project - for more details please check out the linked documentation.
+
 
 ## Purpose
 It helped my to structure my knowledge and identify gaps in it but I hope that others, especially newcomers, could use this cheet sheet as a guide in this, not so small, labyrinth of tools.
