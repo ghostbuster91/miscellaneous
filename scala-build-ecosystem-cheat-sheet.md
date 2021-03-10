@@ -16,7 +16,7 @@
 
 ## Under the hood
 
-1. [BSP](https://build-server-protocol.github.io/) - Builder server protocol made by JetBrains. Code editor needs to be aware of e.g. what the classpath is and so on in order to run tests or main application. This protocol allows to comunicate between code editor and a build tool, so the build tools' specific integrations don't have to be build into code editors and repeated. 
+1. [BSP](https://build-server-protocol.github.io/) - Builder server protocol made by JetBrains. Code editor needs to be aware of e.g. what the classpath is and so on, in order to run tests or main application. This protocol allows to comunicate between code editor and a build tool, so the build tools' specific integrations don't have to be build into code editors and repeated. 
 2. [LSP](https://microsoft.github.io/language-server-protocol/) - Language server protocol made by Microsoft for Visual Studio code. Extract language/framework specific stuff out from the code editor to make it ligher and also to reuse language support acros all code editors which support LSP. This doesn't overlap with BSP - it is used for code navigation, syntax highlithing etc.
 3. [zinc](https://github.com/sbt/zinc) - scala incremental compiler. Many build tools which want to be fast need to implement integration layer for it.
 4. [bloop](https://scalacenter.github.io/bloop/) - Bloop is a build server that runs in the backgroud of your machine and serves build requests for a specific workspace. It uses BSP to communicate with IDE and various build tools. It implements the integration layer for zinc, so the build tools don't have to. With this in your toolbelt the build tool is only responsible for parsing the build definition and fetching dependencies.
@@ -25,10 +25,11 @@
 7. coursier - coursier is a dependency resolver / fetcher à la Maven / Ivy, entirely rewritten from scratch in Scala. It aims at being fast and easy to embed in other contexts. Its core embraces functional programming principles.
 
 ## Linters & formatters
-1. scalafmt
-2. scalari
-3. scalafix
-4. scalastyle
+1. [scalafmt](https://scalameta.org/scalafmt/) - state of the art formatter for your scala code
+2. [scalariform](https://github.com/scala-ide/scalariform) - An alternative to scalafmt although it is unable to break long lines.
+3. [scalafix](https://github.com/scalacenter/scalafix) - Linter with an ability to fix/migrate your code. Custom rules can be applied when upgrading libraries to automatically migrate your code. Scala-stweard uses it.
+4. [scalastyle] - Linter and style checker. Nowadays, linter part is mostly suppressed by wartremover and scalac flags. Still can be usefull for style checking.
+5. [wartremover] - Great linter, in the process of being replaced by scalafix?
 
 ## sbt-plugins
 (apart from linters and formatters)
