@@ -35,14 +35,17 @@
 (apart from linters and formatters)
 1. [sbt-native-pacakger](https://github.com/sbt/sbt-native-packager) - various ways of packaging your application. Usually used for creation of docker images.
 2. [sbt-assembly](https://github.com/sbt/sbt-assembly) - packages your application as a fat jar
-3. sbt-ci-release
-4. sbt-release
+3. [sbt-ci-release](https://github.com/olafurpg/sbt-ci-release) - Sbt plugin to automate releases to Sonatype and Maven Central from GitHub Actions or Travis. Version is derived from git tags. Uses: sbt-dynver, sbt-pgp, sbt-sonatype, sbt-git
+
+4. [sbt-release](https://github.com/sbt/sbt-release) - Configure your release process as a series of release steps in scala code. Version dervied from version file. Uses sbt-pgp and sbt-ci-release.
 5. sbt-git - calling git from sbt. Used by sbt-ci-release
 6. [sbt-tpolecat](https://github.com/DavidGregory084/sbt-tpolecat) - recommended set of compiler flags
-7. sbt-dynver
-8. sbt-pgp - calling pgp binary from sbt
-9. sbt-travis-ci
-10. sbt-github-actions
+7. [sbt-dynver](https://github.com/dwijnand/sbt-dynver) - is an sbt plugin to dynamically set your version from git.
+8. [sbt-pgp](https://github.com/sbt/sbt-pgp) - calling pgp binary from sbt
+9. [sbt-sonatype](https://github.com/xerial/sbt-sonatype) - A sbt plugin for publishing your project to the Maven central repository through the REST API of Sonatype Nexus.
+10. [sbt-pack](https://github.com/xerial/sbt-pack) - Create distributable scala packages togheter with the launch script. An alternative to sbt-assembly.
+11. [sbt-travis-ci](https://github.com/dwijnand/sbt-travisci) - sbt-travisci is an sbt plugin to integrate with Travis CI. ?? HOW?
+12. sbt-github-actions
 
 ## github actions
 1. [coursier-cache-action](https://github.com/coursier/cache-action) - A GitHub action to save / restore the coursier / sbt / mill / Ammonite caches of your build.
