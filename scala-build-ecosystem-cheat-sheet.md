@@ -20,7 +20,7 @@ It helped my to structure my knowledge and identify gaps in it but I hope that o
 3. [zinc](https://github.com/sbt/zinc) - scala incremental compiler. Many build tools which want to be fast need to implement integration layer for it.
 4. [bloop](https://scalacenter.github.io/bloop/) - Bloop is a build server that runs in the backgroud of your machine and serves build requests for a specific workspace. It uses BSP to communicate with IDE and various build tools. It implements the integration layer for zinc, so the build tools don't have to. With this in your toolbelt the build tool is only responsible for parsing the build definition and fetching dependencies.
 5. [metals](https://scalameta.org/metals/) - Language server for scala. Uses LSP to communicate with IDE and BSP to communicate with build tools.
-6. [semanticDB] - In order to power up the huge set of tools with rich features you need to know more than just a code structure. SemanticDB is a place when compiler puts that information for the latter use of other tools.
+6. [semanticDB](https://scalameta.org/docs/semanticdb/guide.html) - In order to power up the huge set of tools with rich features you need to know more than just a code structure. SemanticDB is a place when compiler puts that information for the latter use of other tools.
 7. [coursier](https://github.com/coursier/coursier) - coursier is a dependency resolver. It can be used as a standalone tool or by the build tools to fetch dependencies. Recently, sbt started using it.
 
 ## Others
