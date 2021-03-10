@@ -8,12 +8,6 @@
 3. [mill](https://github.com/com-lihaoyi/mill) - Build tool initially created by Li Haoyi. Strives to be simpler than sbt.
 4. [furry](https://github.com/propensive/fury) - Build tool created by Jon Pretty. Build definition separated from source code. Imperative approach to edition and maintenance.
 
-## IDE
-
-1. Intelij IDEA
-2. VS code + metals -> 
-3. Ensime - ???
-
 ## Under the hood
 
 1. [BSP](https://build-server-protocol.github.io/) - Builder server protocol made by JetBrains. Code editor needs to be aware of e.g. what the classpath is and so on, in order to run tests or main application. This protocol allows to comunicate between code editor and a build tool, so the build tools' specific integrations don't have to be build into code editors and repeated for each new editor. 
