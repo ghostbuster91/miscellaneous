@@ -9,7 +9,7 @@ It helped my to structure my knowledge and identify gaps in it, but I hope that 
 
 ## Build tools
 
-1. [sbt](https://www.scala-sbt.org/) - Official scala build tool. It is the most popular, very matured and has comperhensive documentation. 
+1. [sbt](https://www.scala-sbt.org/) - Official scala build tool. It is the most popular, very matured and has comprehensive documentation. 
   There is also a ton of stuff build on top of it (plugins, integrations etc.). Some people find it hard to grasp.
 3. [mill](https://github.com/com-lihaoyi/mill) - Build tool initially created by Li Haoyi. Strives to be simpler than sbt.
 4. [fury](https://github.com/propensive/fury) - Build tool created by Jon Pretty. Build definition separated from source code. Changes are made in an imperative style.
