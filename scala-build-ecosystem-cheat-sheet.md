@@ -38,7 +38,7 @@
 3. [sbt-ci-release](https://github.com/olafurpg/sbt-ci-release) - Sbt plugin to automate releases to Sonatype and Maven Central from GitHub Actions or Travis. Version is derived from git tags. Uses: sbt-dynver, sbt-pgp, sbt-sonatype, sbt-git
 
 4. [sbt-release](https://github.com/sbt/sbt-release) - Configure your release process as a series of release steps in scala code. Version dervied from version file. Uses sbt-pgp and sbt-ci-release.
-5. sbt-git - calling git from sbt. Used by sbt-ci-release
+5. [sbt-git](https://github.com/sbt/sbt-git) - calling git from sbt. Used by sbt-ci-release
 6. [sbt-tpolecat](https://github.com/DavidGregory084/sbt-tpolecat) - recommended set of compiler flags
 7. [sbt-dynver](https://github.com/dwijnand/sbt-dynver) - is an sbt plugin to dynamically set your version from git.
 8. [sbt-pgp](https://github.com/sbt/sbt-pgp) - calling pgp binary from sbt
