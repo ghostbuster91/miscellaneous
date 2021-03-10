@@ -45,8 +45,9 @@
 9. [sbt-sonatype](https://github.com/xerial/sbt-sonatype) - A sbt plugin for publishing your project to the Maven central repository through the REST API of Sonatype Nexus.
 10. [sbt-pack](https://github.com/xerial/sbt-pack) - Create distributable scala packages togheter with the launch script. An alternative to sbt-assembly.
 11. [sbt-travis-ci](https://github.com/dwijnand/sbt-travisci) - sbt-travisci is an sbt plugin to integrate with Travis CI. ?? HOW?
-12. sbt-github-actions
+12. [sbt-github-actions](https://github.com/djspiewak/sbt-github-actions) - Can generate github workflow from sbt build.
 
 ## github actions
 1. [coursier-cache-action](https://github.com/coursier/cache-action) - A GitHub action to save / restore the coursier / sbt / mill / Ammonite caches of your build.
+2. [setup-scala](https://github.com/olafurpg/setup-scala) - A GitHub Action to install Java via Jabba and sbt.
 
