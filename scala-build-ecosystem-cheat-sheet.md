@@ -1,4 +1,4 @@
-# Scala build ecosystem cheet sheet
+# Scala build ecosystem cheat sheet
 
 ## Introduction
 Scala, because of its complexity, struggled for many years to provide great developer experience. Thankfully to the great work of many contributors around the world these times are gone forever. Standard ways of enriching IDE's with language specific things were not enough. That's why scala had to take the lead in driving the shape of the build systems further. Below is an incomplete list of tools somehow related to building scala projects which I personally think are quite significant. Obviously their descriptions are rather shallow, I only tried to capture the most essential aspect of a given project - for more details please check out the linked documentation.
@@ -12,7 +12,7 @@ It helped my to structure my knowledge and identify gaps in it, but I hope that 
 1. [sbt](https://www.scala-sbt.org/) - Official scala build tool. It is the most popular, very matured and has comperhensive documentation. 
   There is also a ton of stuff build on top of it (plugins, integrations etc.). Some people find it hard to grasp.
 3. [mill](https://github.com/com-lihaoyi/mill) - Build tool initially created by Li Haoyi. Strives to be simpler than sbt.
-4. [furry](https://github.com/propensive/fury) - Build tool created by Jon Pretty. Build definition separated from source code. Imperative approach to edition and maintenance.
+4. [fury](https://github.com/propensive/fury) - Build tool created by Jon Pretty. Build definition separated from source code. Imperative approach to edition and maintenance.
 
 ## Under the hood
 
